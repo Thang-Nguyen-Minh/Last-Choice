@@ -2,9 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>[Bài tập 10 - Xuất sắc] Giao diện hóa đơn và đánh giá toàn diện</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 12px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h3{
+            text-align: center;
+        }
+        fieldset{
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
-
+    <h2>Chi tiết Hóa đơn Mua hàng</h2>
+    <table>
+        <caption>Hóa đơn điện tử #HD-20260310</caption>
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Chi tiết</th>
+                <th>Đơn giá</th>
+                <th>Thành tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Áo thun lập trình viên</td>
+                <td>
+                    <ul>
+                        <li>Màu sắc : Đen</li>
+                        <li>Kích cỡ : XL</li>
+                        <li>Chất liệu : Cotton 100%</li>
+                    </ul>
+                </td>
+                <td>250.000đ</td>
+                <td>800.000đ</td>
+            </tr>
+            <tr>
+                <td>Bàn phím cơ bản</td>
+                <td>
+                    <ul>
+                        <li>Switch : Red</li>
+                        <li>Layout : TKL</li>
+                    </ul>
+                </td>
+                <td>250.000đ</td>
+                <td>800.000đ</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Tổng tiền thanh toán : 1.050.000đ</h3>
+    <hr/>
+    <h2>Đánh giá trải nghiệm mua hàng</h2>
+    <form action="https://localhost:8080">
+        <fieldset>
+            <legend>Phản hồi của bạn</legend>
+            <label for="satisfied">Mức độ hài lòng :</label>
+            <select id="satisfied" name="satisfied">
+                <option value="1">--Vui lòng chọn số sao --</option>
+                <option value="2">1 sao</option>
+                <option value="3">2 sao</option>
+                <option value="4">3 sao</option>
+                <option value="5">4 sao</option>
+                <option value="6">5 sao</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="comment">Lời nhận xét chi tiết:</label>
+            <br/>
+            <br/>
+            <textarea id="comment" name="comment" rows="4" cols="80"
+            placeholder="Hãy chia sẻ trải nghiệm của bạn về sản pẩm và dịch vụ..."
+            ></textarea>
+        </fieldset>
+        <br/>
+        <button type="submit">Gửi phản hồi</button>
+    </form>
 </body>
 </html>
