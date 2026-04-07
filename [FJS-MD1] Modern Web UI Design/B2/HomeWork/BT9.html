@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>[Bài tập 9 - Xuất sắc] Ứng tuyển việc làm với Regex</title>
+    <style>
+        form{
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
-
+<h2>Nộp hồ sơ ứng tuyển</h2>
+<form action="https://portal.rikkei.edu.vn/" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Thông tin liên hệ</legend>
+        <label for="name">Họ và tên: </label>
+        <input type="text" id="name">
+        <br/>
+        <br/>
+        <label for="sdt">Số điện thoại</label>
+        <input type="text" id="sdt" pattern="[0][1-9][0-9]{8}" placeholder="0912345678">
+    </fieldset>
+    <br/>
+    <fieldset>
+        <legend>Hồ sơ đính kèm</legend>
+        <label for="job">Tải lên CV (Định dạng PDF/Word): </label>
+        <input type="file" id="job">
+    </fieldset>
+    <br/>
+    <button type="submit">Nộp hồ sơ</button>
+</form>
 </body>
 </html>
