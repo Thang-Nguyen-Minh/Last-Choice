@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>[Bài tập 8 - Giỏi] Đặt vé sự kiện âm nhạc</title>
 </head>
 <body>
-
+    <h2>Đăng Ký Đặt Vé Sự Kiện Âm Nhạc</h2>
+    <form action="https://portal.rikkei.edu.vn/">
+        <label for="name">Họ và tên: </label>
+        <input type="text" id="name" placeholder="Nhập họ và tên...">
+        <br/>
+        <br/>
+        <label for="ticket">Số lượng vé: </label>
+        <input type="number" id="ticket" min="1" max="5" width="15px">
+        <br/>
+        <br/>
+        <label for="vip">Mã vé VIP(Đã cấp sẵn): </label>
+        <input type="text" id="vip" value="MUSIC-VIP-2026" readonly>
+        <br/>
+        <br/>
+        <label for="sale">Mã giảm giá nội bộ: </label>
+        <input type="text" id="sale" value="NOT-ELIGIBLE" disabled>
+        <br/>
+        <br/>
+        <button type="submit">Xác nhận đặt vé</button>
+    </form>
 </body>
 </html>
