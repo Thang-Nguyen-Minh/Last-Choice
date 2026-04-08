@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>[Bài tập 2 - Mức độ: Cơ bản]  Bảng danh sách nhân sự</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-
+    <h1>Lịch Công Tác Tuần</h1>
+    <table>
+        <caption>Lịch làm việc chi tiết từ Thứ 2 đến Thứ 6</caption>
+        <thead>
+        <tr>
+            <th>Thời gian</th>
+            <th>Thứ 2</th>
+            <th>Thứ 3</th>
+            <th>Thứ 4</th>
+            <th>Thứ 5</th>
+            <th>Thứ 6</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="col">Sáng</th>
+            <td colspan="3">Họp giao ban</td>
+            <td rowspan="2">Khảo sát thực địa</td>
+            <td>Làm việc tại văn phòng</td>
+        </tr>
+        <tr>
+            <th scope="col">chiều</th>
+            <td>Xử lý email</td>
+            <td>Lên kế hoạch</td>
+            <td>Họp nhóm</td>
+            <td>Báo cáo tuần</td>
+        </tr>
+        </tbody>
+    </table>
 </body>
 </html>
