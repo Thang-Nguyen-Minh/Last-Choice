@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập 9 - Xuất sắc] Bảng giá Dịch vụ (Pricing Table)</title>
+    <style>
+        .container {
+            width: 1000px;
+            margin: auto;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .price-table{
+            display: flex;
+            justify-content: space-between;
+        }
+        .box{
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            width: 250px;
+            text-align: center;
+        }
+        .box:active{
+            background-color: #E3F2FD;
+            border: 2px solid #3174CA;
+        }
+        .box:active .box-header{
+            color: #3174CA;
+        }
+        .price{
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .price .period {
+            font-size: 14px;
+            color: #888;
+            font-weight: normal;
+        }
+        .box-btn{
+            margin-bottom: 20px;
+        }
+        button{
+            color: white;
+            text-align: center;
+            font-size: 15px;
+            padding: 10px;
+            background-color: #3398DA;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="price-table">
+            <div class="box">
+                <div class="box-header">
+                    <h2>Gói cơ bản</h2>
+                </div>
+                <div class="box-body">
+                    <p class="price">
+                        199.000đ<span class="period">/tháng</span>
+                    </p>
+                    <p>1 tài khoản người dùng</p>
+                    <p>Hỗ trợ qua thư điện tử</p>
+                    <p>5GB Dung lượng lưu trữ</p>
+                </div>
+                <button>Chọn gói này</button>
+            </div>
+            <div class="box">
+                <div class="box-header">
+                    <h2>Gói chuyên nghiệp</h2>
+                </div>
+                <div class="box-body">
+                    <p class="price">
+                    499.000đ<span class="period">/tháng</span>
+                </p>
+                    <p>5 tài khoản người dùng</p>
+                    <p>Hỗ trợ ưu tiên 24/7 </p>
+                    <p>50GB Dung lượng lưu trữ</p>
+                </div>
+                <button>Chọn gói này</button>
+            </div>
+            <div class="box">
+                <div class="box-header">
+                    <h2>Gói doanh nghiệp</h2>
+                </div>
+                <div class="box-body">
+                    <p class="price">
+                        999.000đ<span class="period">/tháng</span>
+                    </p>
+                    <p>Không giới hạn tài khoản</p>
+                    <p>Hỗ trợ kỹ thuật riêng</p>
+                    <p>Không giới hạn dung lượng</p>
+                </div>
+                <div class="box-btn">
+                    <button>Chọn gói này</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
