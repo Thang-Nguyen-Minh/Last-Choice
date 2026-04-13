@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập 7 - Giỏi] Giao diện Câu hỏi thường gặp</title>
+    <style>
+      .container {
+        width: 800px;
+        margin: auto;
+        background-color: lightgray;
+        padding: 20px;
+      }
+      .faq{
+        background-color: white;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 0 auto;
+      }
+      .faq-content{
+        text-align: center;
+        border-bottom: 2px solid #eee;
+      }
+      .faq-question{
+        font-size: 20px;
+        background-color: #FAFAFA;
+        border-radius: 15px;
+        border: 1px solid lightgray;
+        margin: 15px auto 0 auto;
+        width: 600px;
+      }
+      .faq-answer{
+        color: lightgray;
+      }
+      .faq-question:active {
+        background-color: #eef2ff;
+        border-color: #3b82f6;
+      }
+      .faq-question:active strong{
+        color: #3b82f6;
+      }
+      .faq-question:active .faq-answer {
+        color: hsl(14, 100%, 50%);
+        font-weight: 500;
+      }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="faq">
+        <div class="faq-content">
+          <h2>Câu hỏi thường gặp (FAQ)</h2>
+        </div>
+        <div class="faq-question">
+          <p><strong>1. Khóa học có bắt buộc phải theo đúng lịch không</strong></p>
+          <div class="faq-answer">
+            <p>Hầu hết các khóa học của chúng tôi đều là video quay sẵn, bạn hoàn toàn có thể chủ động sắp xếp thời
+              gian tự học theo tiến độ riêng của mình</p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <p><strong>2. Hoa nở không màu</strong></p>
+          <div class="faq-answer">
+            <p>Giờ đây chúng ta là 2 người dưng khác lạ , cuộc đời lắm vô thường sao cứ mãi vấn vương</p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <p><strong>3. 1 Phút</strong></p>
+          <div class="faq-answer">
+            <p>1 phút đứng trước mặt em, 1 phút nói ra lời chưa nói</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
