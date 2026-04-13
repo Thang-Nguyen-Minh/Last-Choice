@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập 8 - Giỏi] Trích dẫn Báo chí (Blockquote Styling)</title>
+    <style>
+        .container {
+            width: 500px;
+            margin: auto;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .triet-ly{
+            background-color: white;
+            border: 1px solid lightgray;
+            padding: 30px;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .triet-ly-text::before {
+            content: "“";
+            font-size: 50px;
+            color: #ccc;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            font-family: serif;
+        }
+        .triet-ly-text::after {
+            content: "”";
+            font-size: 50px;
+            color: #ccc;
+            position: absolute;
+            right: 15px;
+            bottom: 50px;
+            font-family: serif;
+        }
+        .triet-ly-text p::first-letter{
+            font-size: 300%;
+            color: #2C80B8;
+            font-weight: bold;
+            float: left;
+            line-height: 1;
+            margin-right: 8px;
+        }
+        .triet-ly-content::after {
+            content: "- Tỷ phú công nghệ -";
+            display: block;
+            text-align: right;
+            margin-top: 20px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="triet-ly">
+            <div class="triet-ly-content">
+                <div class="triet-ly-text">
+                    <p>
+                        Đột phá không đến từ việc cố gắng tạo ra 1 thứ gì đó lớn lao, mà từ việc liên tục giải quyết
+                        các vấn đề nhỏ nhặt xung quanh cuộc sống của bạn. Khi bạn tập trung xây dựng sản phẩm mang
+                        lại giá trị thực sự cho người dùng, những điều vĩ đại sẽ tự nhiên theo sau.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
