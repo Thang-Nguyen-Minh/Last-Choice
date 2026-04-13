@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập 10 - Xuất sắc] Giao diện Cá nhân (Personal Portfolio Banner)</title>
+    <style>
+      .container {
+        background:
+        url("https://image.slidesdocs.com/responsive-images/background/business-modern-tuscany-portfolio-abstract-powerpoint-background_d9f289ef59__960_540.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 50px 50px 50px 50px;
+      }
+      .box{
+        text-align: center;
+      }
+      .name {
+        font-size: 4rem; /* Đơn vị rem cho tiêu đề */
+        margin: 0;
+      }
+      .name::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 4px;
+        background-color: #4ecdc4;
+        margin: 15px auto 0;
+      }
+      .job-title {
+        font-size: 28px;
+        font-weight: 300;
+        color: #bdc3c7;
+        margin-top: 10px;
+      }
+
+      .description {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 25px 0;
+      }
+      .slogan {
+        font-size: 14px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+      button {
+          color: #002fff;
+          text-align: center;
+          font-size: 15px;
+          padding: 10px;
+          background-color : #FAE8E3;
+          border: 1px solid #002fff;
+          border-radius: 5px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+          <h1 class="name">Nguyễn Văn A</h1>
+
+          <p class="job-title">Frontend Developer</p>
+
+          <p class="description">
+            Thiết kế trải nghiệm người dùng, sáng tạo giao diện độc đáo, tối ưu hoá tương tác.
+          </p>
+
+          <p class="slogan">SÁNG TẠO ĐỂ DẪN ĐẦU</p>
+
+          <div class="cta-wrapper">
+            <button>
+              Tải CV
+            </button>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
