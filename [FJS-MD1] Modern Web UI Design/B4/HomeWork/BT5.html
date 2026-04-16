@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Đăng ký nhận bản tin</title>
+  <style>
+    body {
+      background-color: #ebedef;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding-top: 100px;
+    }
+
+    .popup {
+      width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .popup h2 {
+      color: #e74c3c;
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    .popup p {
+      color: #7f8c8d;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .subscribe-form {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .subscribe-form input[type="email"] {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 300px;
+      outline: none;
+    }
+
+    .subscribe-form button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .subscribe-form button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+<div class="popup">
+  <h2>Đăng ký nhận khuyến mãi!</h2>
+  <p>Nhập email của bạn để không bỏ lỡ những deal "Siêu Sale Công Nghệ" mới nhất từ chúng tôi.</p>
+
+  <div class="subscribe-form">
+    <input type="email" placeholder="Nhập địa chỉ email...">
+    <button type="button">Đăng ký ngay</button>
+  </div>
+</div>
+
+</body>
+</html>
