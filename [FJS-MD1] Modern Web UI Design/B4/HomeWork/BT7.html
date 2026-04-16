@@ -1,10 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bố cục Lưới 3 Cột Sản Phẩm</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .product-grid {
+      background-color: #fff;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0;
+    }
+
+    .grid-title {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .product-card {
+      display: inline-block;
+      width: 30%;
+      vertical-align: top;
+      padding: 30px 15px;
+      border: 1px solid #eee;
+      min-height: 250px;
+      font-size: 14px;
+    }
+
+    .product-card h3 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      color: #777;
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+
+    .price {
+      color: #e74c3c;
+      font-weight: bold;
+      margin: 15px 0;
+      display: block;
+    }
+
+    .btn-buy {
+      background-color: #3498db;
+      color: white;
+      padding: 8px 15px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+  </style>
 </head>
 <body>
+
+<div class="product-grid">
+  <h2 class="grid-title">Danh Sách Sản Phẩm Nổi Bật</h2>
+
+  <div class="product-card">
+    <h3>Laptop Gaming Cao Cấp</h3>
+    <p>Hiệu năng vượt trội, màn hình 144Hz cho trải nghiệm chơi game mượt mà.</p>
+    <span class="price">25.000.000 VND</span>
+    <a href="#" class="btn-buy">Mua ngay</a>
+  </div>
+
+  <div class="product-card">
+    <h3>Điện Thoại Chụp Ảnh Khủng</h3>
+    <p>Camera 108MP, pin trâu 5000mAh, sạc nhanh 65W.</p>
+    <span class="price">12.500.000 VND</span>
+    <a href="#" class="btn-buy">Mua ngay</a>
+  </div>
+
+  <div class="product-card">
+    <h3>Tai Nghe Chống Ồn Chủ Động</h3>
+    <p>Cách âm tuyệt đối, âm thanh vòm 360 độ, nghe nhạc cực đã.</p>
+    <span class="price">4.200.000 VND</span>
+    <a href="#" class="btn-buy">Mua ngay</a>
+  </div>
+</div>
 
 </body>
 </html>
