@@ -14,81 +14,93 @@
       background-color: #f4f4f4;
       margin: 0;
       padding: 20px;
+      min-height: 100vh;
     }
-
-    .product-grid {
-      background-color: #fff;
-      max-width: 1200px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 0;
+    .dentistry{
+      padding: 50px 50px;
+      width: 1000px;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 1px solid blanchedalmond;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-
-    .grid-title {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    .product-card {
-      display: inline-block;
-      vertical-align: top;
-      padding: 30px 15px;
-      border: 1px solid #eee;
-      font-size: 14px;
-      width: 33.333%;
-    }
-
-    .product-card h3 { font-size: 1.1rem; margin-bottom: 10px; }
-    .product-card p { color: #777; font-size: 0.9rem; line-height: 1.4; }
-    .price { color: #e74c3c; font-weight: bold; margin: 15px 0; display: block; }
-    .btn-buy {
-      background-color: #3498db;
+    .dentistry-content{
+      background-color: #017BFF;
       color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 4px;
-      display: inline-block;
+      text-align: left;
+      flex: 1;
+      padding: 40px 20px;
+      border-radius: 10px;
     }
-    @media (max-width: 768px) {
-      .product-card {
-        width: 100%;
-        border-bottom: 1px solid #eee;
-      }
+    .dentistry-form{
+      flex: 1;
+      padding: 40px 20px;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+    .dentistry-form form{
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #555;
+      font-size: 0.9rem;
+    }
 
-      .product-grid {
-        padding: 10px;
-      }
+    input, select {
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    .btn-submit {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .btn-submit:hover { background-color: #218838; }
+
+    @media (max-width: 768px) {
+      .dentistry { flex-direction: column-reverse; margin: 20px; }
     }
   </style>
 </head>
 <body>
-
-<div class="product-grid">
-  <h2 class="grid-title">Danh Sách Sản Phẩm (Responsive)</h2>
-
-  <div class="product-card">
-    <h3>Laptop Gaming Cao Cấp</h3>
-    <p>Hiệu năng vượt trội, màn hình 144Hz cho trải nghiệm chơi game mượt mà.</p>
-    <span class="price">25.000.000 VND</span>
-    <a href="#" class="btn-buy">Mua ngay</a>
-  </div>
-
-  <div class="product-card">
-    <h3>Điện Thoại Chụp Ảnh Khủng</h3>
-    <p>Camera 108MP, pin trâu 5000mAh, sạc nhanh 65W.</p>
-    <span class="price">12.500.000 VND</span>
-    <a href="#" class="btn-buy">Mua ngay</a>
-  </div>
-
-  <div class="product-card">
-    <h3>Tai Nghe Chống Ồn Chủ Động</h3>
-    <p>Cách âm tuyệt đối, âm thanh vòm 360 độ, nghe nhạc cực đã.</p>
-    <span class="price">4.200.000 VND</span>
-    <a href="#" class="btn-buy">Mua ngay</a>
-  </div>
-</div>
-
+    <div class="dentistry">
+      <div class="dentistry-content">
+          <h2>Nha Khoa Smile Care</h2>
+          <p>Nụ cười tự tin là chìa khóa mở ra những cơ hội mới. Chúng tôi cam kết mang lại trải nghiệm chăm sóc răng miệng không đau với công nghệ tiên tiến nhất đến từ Châu Âu.</p>
+          <p>Đội ngũ bác sĩ chuyên khoa hơn 10 năm kinh nghiệm</p>
+          <p>Trang thiết bị X-Quang 3D hiện đại nhất</p>
+          <p>Vô trùng tuyệt đối theo tiêu chuẩn quốc tế</p>
+          <p>Bảo hành trọn đời dịch vụ Răng sứ</p>
+      </div>
+      <div class="dentistry-form">
+        <form action="http://localhost:8080">
+            <h3>Đặt lịch khám ngay</h3>
+            <label for="username">Họ và tên</label>
+            <input type="text" id="username" placeholder="Nhập tên của bạn">
+            <label for="phone">Số điện thoại</label>
+            <input type="text" id="phone" placeholder="Nhập số điện thoại cần liên hệ">
+            <label for="service">Dịch vụ cần tư vấn</label>
+            <select id="service">
+                <option value="1">Khám tổng quát & Lấy cao răng</option>
+                <option value="2">Nhổ răng không không đau</option>
+            </select>
+          <button type="submit" class="btn-submit">Xác nhận đặt lịch</button>
+        </form>
+      </div>
+    </div>
 </body>
 </html>
