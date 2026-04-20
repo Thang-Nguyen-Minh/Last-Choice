@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phân biệt ẩn phần tử CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .row {
+      margin-bottom: 50px;
+      background-color: #eee;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .box {
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+      color: white;
+      text-align: center;
+      line-height: 150px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .green { background-color: #2ecc71; }
+    .blue  { background-color: #3498db; }
+    .purple { background-color: #9b59b6; }
+    .none {
+      display: none;
+    }
+    .hidden {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+
+<h3>Hàng 1: Sử dụng display: none (Ẩn hoàn toàn)</h3>
+<div class="row">
+  <div class="box green">Sản phẩm 1</div>
+  <div class="box blue none">Sản phẩm 2</div>
+  <div class="box purple">Sản phẩm 3</div>
+</div>
+
+<h3>Hàng 2: Sử dụng visibility: hidden (Ẩn giữ chỗ)</h3>
+<div class="row">
+  <div class="box green">Sản phẩm 4</div>
+  <div class="box blue hidden">Sản phẩm 5</div>
+  <div class="box purple">Sản phẩm 6</div>
+
+</div>
+
+</body>
+</html>

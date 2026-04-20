@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design: Mobile-First</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 15px;
+        }
+        .intro-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .intro-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .intro-content h2 {
+            color: #334e68;
+            margin-bottom: 15px;
+        }
+
+        .intro-content p {
+            line-height: 1.6;
+            color: #486581;
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .intro-section {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .intro-image {
+                flex: 0 0 40%;
+            }
+
+            .intro-content {
+                flex: 0 0 60%;
+                padding-left: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <section class="intro-section">
+        <div class="intro-image">
+            <img src="https://cdn.tgdd.vn/2021/10/content/topzone21280x720-800-resize-800x450.jpg" alt="Cửa hàng công nghệ">
+        </div>
+
+        <div class="intro-content">
+            <h2>Giới thiệu Cửa Hàng</h2>
+            <p>
+                Chào mừng bạn đến với hệ thống cửa hàng công nghệ hiện đại nhất. Chúng tôi
+                cung cấp đa dạng các thiết bị điện tử, từ máy tính, laptop đến điện thoại, phụ
+                kiện thông minh. Mọi sản phẩm đều được cam kết chính hãng 100%, bảo hành
+                uy tín và dịch vụ chăm sóc khách hàng tận tâm nhất.
+            </p>
+            <p>
+                Hãy cùng khám phá các sản phẩm tuyệt vời của hàng trăm thương hiệu được
+                trưng bày tại TechStore.
+            </p>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
