@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Design: Mobile-First</title>
+    <title>[Bài tập] Card Linh Hoạt Với Tỷ Lệ Co Giãn</title>
     <style>
         * {
             box-sizing: border-box;
@@ -11,79 +11,75 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
-
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 15px;
-        }
-        .intro-section {
+        .info{
             display: flex;
-            flex-direction: column;
-            gap: 20px;
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
+            align-items: center;
+            justify-content: center;
         }
-
-        .intro-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 4px;
+        .title{
+            text-align: center;
         }
-
-        .intro-content h2 {
-            color: #334e68;
-            margin-bottom: 15px;
+        .info-box{
+            margin: 10px 10px;
+            border-radius: 10px;
+            border: 1px solid blanchedalmond;
+            border-top: 5px solid #1EBAA0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
         }
-
-        .intro-content p {
-            line-height: 1.6;
-            color: #486581;
-            margin-bottom: 10px;
+        .skill{
+            text-transform: uppercase;
+            color: #1EBAA0;
         }
-
-        @media (min-width: 768px) {
-            .intro-section {
-                flex-direction: row;
-                align-items: center;
+        @media (max-width: 768px) {
+            .info{
+                flex-direction: column;
             }
-
-            .intro-image {
-                flex: 0 0 40%;
-            }
-
-            .intro-content {
-                flex: 0 0 60%;
-                padding-left: 30px;
+            .info-box{
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: auto;
             }
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <section class="intro-section">
-        <div class="intro-image">
-            <img src="https://cdn.tgdd.vn/2021/10/content/topzone21280x720-800-resize-800x450.jpg" alt="Cửa hàng công nghệ">
+    <h1 class="title">Đội ngũ phát triển</h1>
+    <div class="info">
+        <div class="info-box">
+            <div class="info-box-img">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+            </div>
+            <div class="info-box-text">
+                <h2>Trần Tuấn Anh</h2>
+                <p class="skill">frontend developer</p>
+                <div class="info-box-description">
+                    Chuyên gia về ReactJS và UI/UX với hơn 5 năm kinh nghiệm. Đam mê thiết kế các giao diện người dùng hiện đại và hiệu suất cao.
+                </div>
+            </div>
         </div>
-
-        <div class="intro-content">
-            <h2>Giới thiệu Cửa Hàng</h2>
-            <p>
-                Chào mừng bạn đến với hệ thống cửa hàng công nghệ hiện đại nhất. Chúng tôi
-                cung cấp đa dạng các thiết bị điện tử, từ máy tính, laptop đến điện thoại, phụ
-                kiện thông minh. Mọi sản phẩm đều được cam kết chính hãng 100%, bảo hành
-                uy tín và dịch vụ chăm sóc khách hàng tận tâm nhất.
-            </p>
-            <p>
-                Hãy cùng khám phá các sản phẩm tuyệt vời của hàng trăm thương hiệu được
-                trưng bày tại TechStore.
-            </p>
+        <div class="info-box">
+            <div class="info-box-img">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+            </div>
+            <div class="info-box-text">
+                <h2>Nguyễn Ngọc Mai</h2>
+                <p class="skill">project manager</p>
+                <div class="info-box-description">
+                    Điều phối viên dự án tài ba, quản lý rủi ro và điều hướng team vượt qua những thử thách công nghệ phức tạp mỗi ngày.                </div>
+            </div>
         </div>
-    </section>
-</div>
-
+        <div class="info-box">
+            <div class="info-box-img">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+            </div>
+            <div class="info-box-text">
+                <h2>Lê Bá Khánh</h2>
+                <p class="skill">backend engineer</p>
+                <div class="info-box-description">
+                    Xây dựng hệ thống Data phức tạp và kiến trúc Microservices. Node.js và AWS là bạn đồng hành không thể thiếu.                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
