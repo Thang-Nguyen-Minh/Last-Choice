@@ -1,48 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-    <title>[Bài tập] Nhập số lượng sách</title>
+    <title>[Bài tập] Căn Chỉnh Footer (Chân trang)</title>
+    <style>
+      body {
+        background-color: #ebedef;
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      footer {
+        background-color: #2C3D50;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 20px 20px 20px;
+      }
+      .contact a{
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        margin: 20px 20px 20px 20px;
+      }
+    </style>
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <div class="container">
-      <section class="card mb-5 shadow-md rounded border border-secondary p-5 mt-5" style="border-radius: 15px;">
-        <header class="text-center">
-          <h1>Thêm sách mới</h1>
-        </header>
-        <article class="card-body p-4">
-          <form action="/add-book" method="post">
-            <fieldset class="mb-4 p-0 border-0">
-              <label for="nameBook" class="form-label fw-semibold">Tên sách</label>
-              <input type="text" class="form-control form-control-lg" id="nameBook"
-                     placeholder="Nhập tên sách ..." style="border-radius: 10px; ">
-            </fieldset>
-            <fieldset class="mb-4 p-0 border-0">
-              <label for="author" class="form-label fw-semibold">Tên tác giả</label>
-              <input type="text" class="form-control form-control-lg" id="author"
-                     placeholder="Nhập tên tác giả ..." style="border-radius: 10px; ">
-            </fieldset>
-            <fieldset class="mb-4 p-0 border-0">
-              <label for="inputText" class="form-label fw-semibold">Tên sách</label>
-              <select class="form-select form-select-lg mb-3 border-secondary" id="inputText"
-                      style="border-radius: 10px;">
-                <option value="" selected disabled hidden>Chọn thể loại...</option>
-                <option value="2">Chiến tranh</option>
-                <option value="3">Tâm lý</option>
-                <option value="4">Tình cảm</option>
-              </select>
-            </fieldset>
-            <footer class="d-grid mt-5">
-              <button type="submit" class="btn btn-primary text-white">Thêm sách</button>
-            </footer>
-          </form>
-        </article>
-      </section>
-    </div>
+    <footer>
+      <div class="copyright">
+        <p>@ 2026 Bản quyền thuộc về Bạn</p>
+      </div>
+      <div class="contact">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Linkedln</a>
+        <a href="#">Instagram</a>
+      </div>
+    </footer>
   </body>
 </html>
