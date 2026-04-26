@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+        <title>[Bài tập] Đồng Bộ Nhận Diện Thương Hiệu (Brand Guidelines)</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-lg-5">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white fw-bold" href="#">Rikkei BookStore</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link fw-bold text-white" href="#">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sách mới</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Khuyến mại</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="fw-bold text-center">Sách nổi bật</h1>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="https://viectop.com.vn/uploads/images/hanh-trinh-ve-phuong-dong-review.jpeg"
+                                 class="img-fluid" alt="name">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Hành trình về phương đông</h5>
+                            <p class="card-text text-secondary small">
+                                Một tác phẩm kinh điển khám phá những giá trị tâm linh và triết lý đặc sắc cảu người phương Đông qua góc nhìn của các học giả phương Tây
+                            </p>
+                            <button class="btn btn-primary mt-auto w-100" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="https://noithatbn.vn/image/catalog/dac-nhan-tam/1123-1493801476304.jpg"
+                                 class="img-fluid" alt="name">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Đắc nhân tâm</h5>
+                            <p class="card-text text-secondary small">
+                                Cuốn sách nổi tiếng nhất mọi thời đại về nghệ thuật giao tiếp, thu phục lòng người và
+                                xây dựng các mối quan hệ thành công
+                            </p>
+                                <button class="btn btn-primary mt-auto w-100" data-bs-toggle="modal"
+                                        data-bs-target="#buyModal">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="buyModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content ">
+                    <div class="modal-header bg-success text-white">
+                        <h5 class="modal-title">Thành công</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>🎉 Đã thêm sản phẩm vào giỏ hàng thành công</p>
+                    </div>
+                    <div class="modal-footer justify-content-center pb-4">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tiếp tục mua sắm</button>
+                        <button type="button" class="btn btn-success">Đến giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</html>
