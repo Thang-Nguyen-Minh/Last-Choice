@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bố cục Bảng Điều Khiển</title>
+</head>
+<body>
+    <div class="flex min-h-screen bg-gray-100 text-slate-800">
+<!--hidden md:flex: Đây là mấu chốt của Responsive. Mặc định là ẩn (hidden), nhưng từ màn hình máy tính (md) trở lên thì hiện ra dưới dạng flex.-->
+        <aside class="w-64 bg-slate-900 text-white hidden md:flex flex-col">
+            <aside class="w-64 bg-[#0f172a] text-white hidden md:flex flex-col p-4">
+                <div class="text-xl font-bold mb-8 px-4">TechGadget Admin</div>
 
-    </body>
+                <nav class="space-y-2">
+                    <a href="#" class="block px-4 py-2 bg-blue-600 rounded-lg">Tổng quan</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-slate-800 rounded-lg transition">Đơn hàng</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-slate-800 rounded-lg transition">Sản phẩm</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-slate-800 rounded-lg transition">Khách hàng</a>
+                </nav>
+            </aside>
+        </aside>
+        <main class="flex-1 flex flex-col p-8">
+            <div class="mb-8">
+                <input type="text"
+                       placeholder="Tìm kiếm mã đơn hàng, sản phẩm..."
+                       class="w-full max-w-md px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <h1 class="text-2xl font-bold mb-6">Tổng quan hệ thống</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-sm text-gray-500 mb-1">Tổng doanh thu</p>
+                    <h3 class="text-xl font-bold">125.000.000 đ</h3>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-sm text-gray-500 mb-1">Đơn hàng mới</p>
+                    <h3 class="text-xl font-bold">342</h3>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-sm text-gray-500 mb-1">Khách hàng truy cập</p>
+                    <h3 class="text-xl font-bold">1,204</h3>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-sm text-gray-500 mb-1">Tỉ lệ chuyển đổi</p>
+                    <h3 class="text-xl font-bold">4.5%</h3>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
 </html>
