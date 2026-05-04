@@ -1,7 +1,3 @@
-// ========================================
-//  FITLIFE PREMIUM – script.js
-// ========================================
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- 1. NAVBAR: thêm class .scrolled khi cuộn ---
