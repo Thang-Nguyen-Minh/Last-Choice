@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Lịch Học & Bộ Môn – FitLife Premium</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+    </head>
+    <body>
+
+        <!-- NAVBAR (giống index.html) -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="assets/images/logo.svg" alt="FitLife Logo" height="40"/>
+                    <span class="fw-bold">FitLife <span class="text-warning">Premium</span></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto fw-semibold">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="classes.html">Lịch Học</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-warning fw-bold px-3" href="contact.html">Đăng Ký Ngay</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero d-flex align-items-center text-white text-center">
+            <div class="hero-overlay"></div>
+            <div class="container position-relative">
+                <p class="text-warning fw-bold text-uppercase letter-spacing">FitLife Premium</p>
+                <h1 class="display-4 fw-black">Lịch Học & Bộ Môn</h1>
+                <p class="lead text-secondary">Khám phá các lớp học đa dạng — từ Yoga tĩnh lặng đến Zumba sôi động.</p>
+            </div>
+        </section>
+
+        <!-- CLASSES SECTION -->
+        <section class="py-6 bg-dark text-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <p class="text-warning fw-bold text-uppercase letter-spacing">Các Bộ Môn</p>
+                    <h2 class="display-5 fw-bold">Chọn Môn Học Phù Hợp</h2>
+                </div>
+                <div class="row g-4">
+
+                    <!-- Yoga -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="class-card rounded-3 overflow-hidden h-100">
+                            <div class="class-thumb">
+                                <img src="assets/images/yoga-1.jpg" alt="Yoga" class="w-100"/>
+                                <div class="class-badge bg-warning text-dark fw-bold">Yoga</div>
+                            </div>
+                            <div class="p-3">
+                                <h6 class="fw-bold mb-1">Yoga Cơ Bản & Nâng Cao</h6>
+                                <p class="text-secondary small mb-2">Cải thiện linh hoạt, giảm stress và cân bằng tâm trí.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-warning"><i class="bi bi-clock me-1"></i>60 phút</small>
+                                    <small class="text-secondary">Mọi trình độ</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pilates -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="class-card rounded-3 overflow-hidden h-100">
+                            <div class="class-thumb">
+                                <img src="assets/images/pilates.jpg" alt="Pilates" class="w-100"/>
+                                <div class="class-badge bg-warning text-dark fw-bold">Pilates</div>
+                            </div>
+                            <div class="p-3">
+                                <h6 class="fw-bold mb-1">Pilates Reformer</h6>
+                                <p class="text-secondary small mb-2">Tăng sức mạnh lõi, cải thiện tư thế và vóc dáng.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-warning"><i class="bi bi-clock me-1"></i>50 phút</small>
+                                    <small class="text-secondary">Trung cấp</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gym -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="class-card rounded-3 overflow-hidden h-100">
+                            <div class="class-thumb">
+                                <img src="assets/images/gym-1.jpg" alt="Gym" class="w-100"/>
+                                <div class="class-badge bg-warning text-dark fw-bold">Gym</div>
+                            </div>
+                            <div class="p-3">
+                                <h6 class="fw-bold mb-1">Strength & Conditioning</h6>
+                                <p class="text-secondary small mb-2">Xây dựng cơ bắp, tăng sức mạnh với lịch tập khoa học.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-warning"><i class="bi bi-clock me-1"></i>Tự do</small>
+                                    <small class="text-secondary">Mọi trình độ</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zumba -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="class-card rounded-3 overflow-hidden h-100">
+                            <div class="class-thumb">
+                                <img src="assets/images/zumba.jpg" alt="Zumba" class="w-100"/>
+                                <div class="class-badge bg-warning text-dark fw-bold">Zumba</div>
+                            </div>
+                            <div class="p-3">
+                                <h6 class="fw-bold mb-1">Zumba Dance Fitness</h6>
+                                <p class="text-secondary small mb-2">Đốt cháy calo theo nhịp điệu Latin sôi động và vui nhộn.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-warning"><i class="bi bi-clock me-1"></i>55 phút</small>
+                                    <small class="text-secondary">Mọi trình độ</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SCHEDULE SECTION -->
+        <section class="py-6 bg-black text-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <p class="text-warning fw-bold text-uppercase letter-spacing">Thời Gian Biểu</p>
+                    <h2 class="display-5 fw-bold">Lịch Học Trong Tuần</h2>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-dark table-bordered table-hover text-center align-middle schedule-table">
+                        <thead>
+                        <tr>
+                            <th class="bg-warning text-dark">Giờ</th>
+                            <th>Thứ 2</th>
+                            <th>Thứ 3</th>
+                            <th>Thứ 4</th>
+                            <th>Thứ 5</th>
+                            <th>Thứ 6</th>
+                            <th>Thứ 7</th>
+                            <th>CN</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-warning fw-bold">06:00</td>
+                            <td><span class="badge-class yoga">Yoga</span></td>
+                            <td>—</td>
+                            <td><span class="badge-class yoga">Yoga</span></td>
+                            <td>—</td>
+                            <td><span class="badge-class yoga">Yoga</span></td>
+                            <td><span class="badge-class pilates">Pilates</span></td>
+                            <td><span class="badge-class yoga">Yoga</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-warning fw-bold">08:00</td>
+                            <td><span class="badge-class pilates">Pilates</span></td>
+                            <td><span class="badge-class gym">Gym PT</span></td>
+                            <td>—</td>
+                            <td><span class="badge-class pilates">Pilates</span></td>
+                            <td><span class="badge-class gym">Gym PT</span></td>
+                            <td><span class="badge-class zumba">Zumba</span></td>
+                            <td><span class="badge-class gym">Gym PT</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-warning fw-bold">10:00</td>
+                            <td><span class="badge-class zumba">Zumba</span></td>
+                            <td><span class="badge-class yoga">Yoga</span></td>
+                            <td><span class="badge-class zumba">Zumba</span></td>
+                            <td><span class="badge-class yoga">Yoga</span></td>
+                            <td>—</td>
+                            <td><span class="badge-class yoga">Yoga</span></td>
+                            <td><span class="badge-class pilates">Pilates</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-warning fw-bold">17:00</td>
+                            <td><span class="badge-class gym">Gym PT</span></td>
+                            <td><span class="badge-class zumba">Zumba</span></td>
+                            <td><span class="badge-class gym">Gym PT</span></td>
+                            <td><span class="badge-class zumba">Zumba</span></td>
+                            <td><span class="badge-class pilates">Pilates</span></td>
+                            <td><span class="badge-class gym">Gym PT</span></td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="text-warning fw-bold">19:00</td>
+                            <td><span class="badge-class yoga">Yoga</span></td>
+                            <td><span class="badge-class pilates">Pilates</span></td>
+                            <td><span class="badge-class yoga">Yoga</span></td>
+                            <td><span class="badge-class gym">Gym PT</span></td>
+                            <td><span class="badge-class zumba">Zumba</span></td>
+                            <td>—</td>
+                            <td><span class="badge-class zumba">Zumba</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Legend -->
+                <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+                    <span class="d-flex align-items-center gap-2"><span class="badge-class yoga">Yoga</span></span>
+                    <span class="d-flex align-items-center gap-2"><span class="badge-class pilates">Pilates</span></span>
+                    <span class="d-flex align-items-center gap-2"><span class="badge-class gym">Gym PT</span></span>
+                    <span class="d-flex align-items-center gap-2"><span class="badge-class zumba">Zumba</span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAINERS SECTION -->
+        <section class="py-6 bg-dark text-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <p class="text-warning fw-bold text-uppercase letter-spacing">Đội Ngũ</p>
+                    <h2 class="display-5 fw-bold">Huấn Luyện Viên</h2>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="trainer-card text-center p-4 rounded-3">
+                            <div class="trainer-avatar mb-3 mx-auto">
+                                <img src="assets/images/trainer.jpg" alt="HLV Minh Khoa" class="rounded-circle img-fluid"/>
+                            </div>
+                            <h6 class="fw-bold mb-0">Nguyễn Minh Khoa</h6>
+                            <small class="text-warning">Personal Trainer</small>
+                            <p class="text-secondary small mt-2">Chứng chỉ NASM-CPT, 8 năm kinh nghiệm trong Strength & Conditioning.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-2">
+                                <a href="#" class="text-warning"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="text-warning"><i class="bi bi-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="trainer-card text-center p-4 rounded-3">
+                            <div class="trainer-avatar mb-3 mx-auto">
+                                <img src="assets/images/trainer-1.jpg" alt="HLV Lan Anh" class="rounded-circle img-fluid"/>
+                            </div>
+                            <h6 class="fw-bold mb-0">Trần Lan Anh</h6>
+                            <small class="text-warning">Yoga Instructor</small>
+                            <p class="text-secondary small mt-2">Chứng chỉ RYT-500, chuyên gia Yoga Hatha và Yoga trị liệu.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-2">
+                                <a href="#" class="text-warning"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="text-warning"><i class="bi bi-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="trainer-card text-center p-4 rounded-3">
+                            <div class="trainer-avatar mb-3 mx-auto">
+                                <img src="assets/images/trainer-1.jpg" alt="HLV Hữu Đức" class="rounded-circle img-fluid"/>
+                            </div>
+                            <h6 class="fw-bold mb-0">Lê Hữu Đức</h6>
+                            <small class="text-warning">Zumba & Dance Fitness</small>
+                            <p class="text-secondary small mt-2">Licensed Zumba Instructor, 6 năm huấn luyện các lớp nhóm sôi động.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-2">
+                                <a href="#" class="text-warning"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="text-warning"><i class="bi bi-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-black text-white pt-5 pb-4">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <img src="assets/images/logo.svg" alt="Logo" height="35"/>
+                            <span class="fw-bold fs-5">FitLife <span class="text-warning">Premium</span></span>
+                        </div>
+                        <p class="text-secondary small">Nơi bạn nâng tầm bản thân mỗi ngày với không gian tập luyện đẳng cấp và đội ngũ chuyên nghiệp.</p>
+                        <div class="d-flex gap-3 mt-3">
+                            <a href="#" class="text-warning fs-5"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-warning fs-5"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-warning fs-5"><i class="bi bi-youtube"></i></a>
+                            <a href="#" class="text-warning fs-5"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <h6 class="fw-bold text-uppercase mb-3">Điều Hướng</h6>
+                        <ul class="list-unstyled text-secondary small">
+                            <li class="mb-2"><a href="index.html" class="text-secondary text-decoration-none">Trang Chủ</a></li>
+                            <li class="mb-2"><a href="classes.html" class="text-secondary text-decoration-none">Lịch Học</a></li>
+                            <li class="mb-2"><a href="contact.html" class="text-secondary text-decoration-none">Liên Hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <h6 class="fw-bold text-uppercase mb-3">Dịch Vụ</h6>
+                        <ul class="list-unstyled text-secondary small">
+                            <li class="mb-2">Personal Training</li>
+                            <li class="mb-2">Group X Classes</li>
+                            <li class="mb-2">Yoga & Pilates</li>
+                            <li class="mb-2">Cardio Zone</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="fw-bold text-uppercase mb-3">Liên Hệ</h6>
+                        <ul class="list-unstyled text-secondary small">
+                            <li class="mb-2"><i class="bi bi-geo-alt-fill text-warning me-2"></i>123 Nguyễn Văn Linh, Q.7, TP.HCM</li>
+                            <li class="mb-2"><i class="bi bi-telephone-fill text-warning me-2"></i>1800 1234</li>
+                            <li class="mb-2"><i class="bi bi-envelope-fill text-warning me-2"></i>info@fitlifepremium.vn</li>
+                            <li class="mb-2"><i class="bi bi-clock-fill text-warning me-2"></i>5:00 AM – 11:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="border-secondary mt-4"/>
+                <div class="text-center text-secondary small">
+                    &copy; 2025 FitLife Premium Fitness Club. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
