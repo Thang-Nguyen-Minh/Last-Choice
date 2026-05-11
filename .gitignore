@@ -1,1 +1,3 @@
 /upload
+touch .gitignore
+    echo "secret.txt" >> .gitignore
