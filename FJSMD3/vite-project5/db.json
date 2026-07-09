@@ -1,0 +1,20 @@
+{
+  "contacts": [
+    { "id": "1", "name": "An Nguyen", "phone": "0901000001" },
+    { "id": "2", "name": "Binh Tran", "phone": "0901000002" }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Lan Le",
+      "email": "lan@example.com",
+      "phone": "0909000001",
+      "department": "HR",
+      "title": "Recruiter",
+      "city": "Ha Noi",
+      "status": "active",
+      "startDate": "2025-01-10",
+      "salaryGrade": "G5"
+    }
+  ]
+}
