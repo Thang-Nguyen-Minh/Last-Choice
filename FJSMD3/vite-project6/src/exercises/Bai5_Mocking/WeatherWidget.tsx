@@ -14,7 +14,7 @@ export function WeatherWidget() {
   useEffect(() => {
     async function fetchWeather() {
       try {
-        const response = await fetch('/api/weather')
+        const response = await fetch('/api/weather.json')
 
         if (!response.ok) {
           throw new Error('Không lấy được dữ liệu thời tiết')
@@ -69,7 +69,7 @@ export function WeatherWidget() {
       <aside className="mt-5 rounded-lg border border-sky-200 bg-sky-50 p-5 text-sm leading-6 text-sky-950">
         <h4 className="font-bold">Kỹ thuật Mocking</h4>
         <p className="mt-2">
-          Component tự gọi API khi mount. Trong unit test, `vi.spyOn(global, 'fetch')`
+          Component tự gọi API mock nội bộ khi mount. Trong unit test, `vi.spyOn(global, 'fetch')`
           ghi đè fetch gốc và trả về dữ liệu tĩnh "Nắng đẹp", nên không phát sinh network request thật.
         </p>
       </aside>

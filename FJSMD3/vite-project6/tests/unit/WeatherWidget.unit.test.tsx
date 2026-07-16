@@ -25,7 +25,7 @@ describe('Bài 5 - WeatherWidget Mocking', () => {
     expect(screen.getByText('28°C')).toBeInTheDocument()
     expect(screen.getByText('Hà Nội')).toBeInTheDocument()
     expect(fetchSpy).toHaveBeenCalledTimes(1)
-    expect(fetchSpy).toHaveBeenCalledWith('/api/weather')
+    expect(fetchSpy).toHaveBeenCalledWith('/api/weather.json')
   })
 
   it('shows a friendly error when fetch fails', async () => {

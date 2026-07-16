@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test'
 
 test('vite-project6 testing exercises work in browser', async ({ page }) => {
-  await page.route('**/api/weather', async (route) => {
+  await page.route('**/api/weather.json', async (route) => {
     await route.fulfill({
       contentType: 'application/json',
       body: JSON.stringify({ condition: 'Nắng đẹp', temperature: 28, location: 'Hà Nội' }),
