@@ -1,0 +1,37 @@
+name: Vite Project 6 CI
+
+on:
+  push:
+    paths:
+      - 'FJSMD3/vite-project6/**'
+      - '.github/workflows/vite-project6-ci.yml'
+  pull_request:
+    paths:
+      - 'FJSMD3/vite-project6/**'
+      - '.github/workflows/vite-project6-ci.yml'
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: FJSMD3/vite-project6
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: FJSMD3/vite-project6/package-lock.json
+      - name: Install
+        run: npm ci
+      - name: Unit tests
+        run: npm run test:unit
+      - name: Integration tests
+        run: npm run test:integration
+      - name: System tests
+        run: npm run test:system
+      - name: Build
+        run: npm run build
