@@ -8,10 +8,9 @@ function Bai5Mocking() {
         <h4 className="font-bold">Yêu cầu Bài 5</h4>
         <ul className="mt-3 list-inside list-disc space-y-2">
           <li>`WeatherWidget` tự gọi API mock `/api/weather.json` khi mount.</li>
-          <li>Giao diện thật dùng file mock tĩnh `public/api/weather` để không gọi mạng ngoài.</li>
+          <li>Giao diện thật dùng file mock tĩnh trong `public/api` để không gọi mạng ngoài.</li>
           <li>Unit test dùng `vi.spyOn(global, 'fetch')` để mock fetch.</li>
-          <li>Mock trả về dữ liệu tĩnh: "Nắng đẹp".</li>
-          <li>Assertion xác nhận UI render dữ liệu mock và fetch chỉ gọi đúng `/api/weather.json`.</li>
+          <li>Assertion xác nhận UI render dữ liệu mock và fetch chỉ gọi đúng endpoint mock.</li>
         </ul>
       </aside>
     </section>

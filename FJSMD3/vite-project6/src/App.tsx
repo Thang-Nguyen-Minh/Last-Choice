@@ -27,18 +27,21 @@ function App() {
   const activeExercise = exercises.find((exercise) => exercise.id === activeId) ?? exercises[0]
 
   return (
-    <main className="min-h-screen bg-[#f7f9fc] text-slate-900">
+    <main className="min-h-screen bg-slate-50 text-slate-900">
       <header className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-4 py-6 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="text-sm font-semibold uppercase text-emerald-700">Module 1 - Testing & Build Pipeline</p>
-              <h1 className="mt-1 text-3xl font-bold text-slate-950 sm:text-4xl">FJSMD3 Project 6: Bài 5-10</h1>
+              <h1 className="mt-1 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+                FJSMD3 Project 6: Bài 5-10
+              </h1>
             </div>
             <p className="max-w-xl text-sm leading-6 text-slate-600">
-              Một Vite project gom các bài về mocking, build production, render strategy, matcher, TDD và CI/CD.
+              Dashboard gom các bài về mocking, build production, render strategy, matcher, TDD và CI/CD.
             </p>
           </div>
+
           <nav aria-label="Danh sách bài tập" className="flex gap-2 overflow-x-auto pb-1">
             {exercises.map((exercise) => {
               const isActive = exercise.id === activeId
@@ -49,8 +52,10 @@ function App() {
                   type="button"
                   data-testid={`tab-bai-${exercise.id}`}
                   onClick={() => setActiveId(exercise.id)}
-                  className={`shrink-0 rounded-lg border px-4 py-2 text-left text-sm font-semibold ${
-                    isActive ? 'border-emerald-700 bg-emerald-700 text-white' : 'border-slate-200 bg-white text-slate-700'
+                  className={`shrink-0 rounded-lg border px-4 py-2 text-left text-sm font-semibold transition ${
+                    isActive
+                      ? 'border-emerald-700 bg-emerald-700 text-white shadow-sm'
+                      : 'border-slate-200 bg-white text-slate-700 hover:border-emerald-300 hover:text-emerald-800'
                   }`}
                 >
                   <span className="block">Bài {exercise.id}</span>
@@ -63,6 +68,7 @@ function App() {
           </nav>
         </div>
       </header>
+
       <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <div className="mb-5 border-b border-slate-200 pb-4">
           <p className="text-sm font-semibold text-sky-700">Bài {activeExercise.id}</p>

@@ -3,9 +3,7 @@ import Bai8Matchers from './Bai8Matchers'
 function Bai8MatchersWrapper() {
   return (
     <section className="grid gap-6 lg:grid-cols-[1fr_420px]">
-      <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-        <Bai8Matchers />
-      </div>
+      <Bai8Matchers />
       <aside className="rounded-lg border border-emerald-200 bg-emerald-50 p-5 text-sm leading-6 text-emerald-950">
         <h4 className="font-bold">Yêu cầu Bài 8</h4>
         <ul className="mt-3 space-y-2 list-disc list-inside">
